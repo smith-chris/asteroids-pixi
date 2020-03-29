@@ -5,7 +5,7 @@
   "main": "rollup.asteroids.js",
   "scripts": {
     "prestart": "rimraf dist",
-    "start": "parcel src/index.html --no-cache --port 1235",
+    "start": "parcel src/index.html --no-autoinstall --no-cache --port 8080",
     "prebuild": "rimraf dist",
     "build": "parcel build src/index.html --no-cache --public-url .",
     "lint": "eslint src/**/*.ts"
