@@ -1,4 +1,4 @@
-import { Engine, FrameTickProvider } from '@ash.ts/ash'
+import { Engine, FrameTickProvider, someEngineConst } from '@ash.ts/ash'
 import { EntityCreator } from './EntityCreator'
 import { Viewport } from './Viewport'
 import { KeyPoll } from './KeyPoll'
@@ -9,6 +9,8 @@ import {
   RenderSystem,
   SystemPriorities,
 } from './systems'
+
+console.log('Engine const: ', someEngineConst)
 
 export async function initialiseGame(container: HTMLElement) {
   const viewport = new Viewport(container.clientWidth, container.clientHeight)
