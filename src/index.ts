@@ -1,10 +1,13 @@
-import { initialiseGame } from './JustShip'
+// import { initialiseGame } from './JustShip'
+import { someEngineConst } from '@ash.ts/ash'
 
-window.addEventListener('load', async () => {
-  const containerElement = document.getElementById('game')
-  if (!containerElement) {
-    return
-  }
+console.log('hello', someEngineConst)
 
-  await initialiseGame(containerElement)
-})
+// window.addEventListener('load', async () => {
+//   const containerElement = document.getElementById('game')
+//   if (!containerElement) {
+//     return
+//   }
+
+//   await initialiseGame(containerElement)
+// })
